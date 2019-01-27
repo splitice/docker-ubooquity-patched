@@ -9,6 +9,6 @@ RUN echo "Backing up 'Ubooquity.jar' to 'Ubooquity.original.jar' just in case...
 	sed -i -e "s/PRELOAD_IMG_NB\ \=\ 2/PRELOAD_IMG_NB\ \=\ 8/g" comicreader/comicreader.js \
 	echo "Inserting edited 'comicreader.js' back in 'Ubooquity.jar'" \
 	zip -q -u /app/ubooquity/Ubooquity.jar comicreader/comicreader.js 2>/dev/null \
-	rm -rf comicreader
-	echo "Finished!" \
+	rm -rf comicreader \
+	echo "Finished!"
 
