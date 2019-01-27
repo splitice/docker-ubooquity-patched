@@ -1,6 +1,5 @@
 FROM linuxserver/ubooquity
-RUN \
-	echo "Backing up 'Ubooquity.jar' to 'Ubooquity.original.jar' just in case..." \
+RUN echo "Backing up 'Ubooquity.jar' to 'Ubooquity.original.jar' just in case..." \
 	cp /app/ubooquity/Ubooquity.jar /app/ubooquity/Ubooquity.original.jar \
 	echo "Extracting 'comicreader.js' from 'Ubooquity.jar'" \
 	unzip -q /app/ubooquity/Ubooquity.jar comicreader/comicreader.js \
